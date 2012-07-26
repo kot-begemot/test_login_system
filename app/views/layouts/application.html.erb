@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TestLoginSystem</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+
+    <div data-pjax-container class="content_path">
+      <%= render partial: "layouts/flashes" %>
+      <%= render partial: "layouts/authentication" %>
+      <%= yield %>
+    </div>
+
+
+  </body>
+</html>

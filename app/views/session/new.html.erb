@@ -1,0 +1,19 @@
+<h1>Login</h1>
+
+<%= form_for(:user, action: login_path) do |f| %>
+  <div class="field">
+    <%= f.label :login  %>
+    <%= f.text_field :login  %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password  %>
+    <%= f.password_field :password  %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Login" %>
+  </div>
+<% end %>
+
+<%= link_to 'Back', main_index_path %>
