@@ -49,7 +49,7 @@ class ApplicationController < ActionController::Base
   def pjax?
     !!request.headers['X-PJAX']
   end
-
+# hello
   def default_layout
     pjax? ? "content" : "application"
   end
