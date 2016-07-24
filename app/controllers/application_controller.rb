@@ -50,6 +50,7 @@ class ApplicationController < ActionController::Base
     !!request.headers['X-PJAX']
   end
 
+# hello max
   def default_layout
     pjax? ? "content" : "application"
   end
